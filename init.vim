@@ -4,6 +4,7 @@
 "If "+y is not working install xclip
 syntax on
 
+set relativenumber
 set number
 set shiftwidth=4
 set smartindent
@@ -48,11 +49,15 @@ map <C-h> <C-w>h
 map <C-l> <C-w>l
 map <C-j> <C-w>j
 map <C-k> <C-w>k
+map <leader>v <C-w>v
+map <leader>s <C-w>s
 
+nnoremap <leader>o o<Esc>
+nnoremap <leader>O O<Esc>
 nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+nnoremap <leader>n :NERDTree<CR>
+nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap <leader>f :NERDTreeFind<CR>
 nnoremap <silent> <Leader>gd :YcmCompleter GoTo<CR>
 
 
