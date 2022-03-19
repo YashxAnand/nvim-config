@@ -52,6 +52,15 @@ map <C-k> <C-w>k
 map <leader>v <C-w>v
 map <leader>s <C-w>s
 
+inoremap ( ()<Esc>i
+inoremap { {}<Esc>i
+inoremap {<CR> {<CR>}<Esc>O
+inoremap [ []<Esc>i
+inoremap < <><Esc>i
+inoremap ' ''<Esc>i
+inoremap " ""<Esc>i
+
+
 nnoremap <leader>o o<Esc>
 nnoremap <leader>O O<Esc>
 nnoremap <leader>n :NERDTreeFocus<CR>
