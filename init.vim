@@ -14,7 +14,6 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set incsearch
-
 call plug#begin('~/.vim/plugged')
 
 Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
@@ -28,6 +27,9 @@ Plug 'lyuts/vim-rtags'
 Plug 'kien/ctrlp.vim'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-surround'
+Plug 'jiangmiao/auto-pairs'
+Plug 'preservim/nerdcommenter'
+Plug 'mattn/emmet-vim'
 
 call plug#end()
 
@@ -52,15 +54,6 @@ map <C-k> <C-w>k
 map <leader>v <C-w>v
 map <leader>s <C-w>s
 
-inoremap ( ()<Esc>i
-inoremap { {}<Esc>i
-inoremap {<CR> {<CR>}<Esc>O
-inoremap [ []<Esc>i
-inoremap < <><Esc>i
-inoremap ' ''<Esc>i
-inoremap " ""<Esc>i
-
-
 nnoremap <leader>o o<Esc>
 nnoremap <leader>O O<Esc>
 nnoremap <leader>n :NERDTreeFocus<CR>
@@ -68,10 +61,3 @@ nnoremap <leader>n :NERDTree<CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
 nnoremap <silent> <Leader>gd :YcmCompleter GoTo<CR>
-
-
-
-
-
-
-
